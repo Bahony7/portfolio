@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Контент */
+.conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3);
+}
+.card {
+  border: 1px solid #ccc;
+  margin: 1.5em;
+}
+.card {
+  background-color: azure;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.card h2 {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.card > a > img {
+  width: 100%;
+}
+.info {
+  text-align: center;
+}
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #3a3b3b;
+}
+
+button:active {
+  background-color: #656565;
+}
+@media (max-width: 1000px) {
+  .conteiner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5);
+  }
+}
+@media (max-width: 600px) {
+  .conteiner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9);
+  }
+  .card {
+    margin-inline: 0;
+  }
+}
